@@ -1024,23 +1024,25 @@
     </div>
   </div>
   <div class="contact-right">
-    <div class="contact-form-group">
-      <label>Votre prénom</label>
-      <input type="text" placeholder="Marie">
-    </div>
-    <div class="contact-form-group">
-      <label>Votre email</label>
-      <input type="email" placeholder="marie@exemple.fr">
-    </div>
-    <div class="contact-form-group">
-      <label>Soin souhaité</label>
-      <input type="text" placeholder="Massage, sophrologie, réflexologie...">
-    </div>
-    <div class="contact-form-group">
-      <label>Votre message</label>
-      <textarea placeholder="Parlez-moi de vous et de vos besoins..."></textarea>
-    </div>
-    <button class="btn-form">Envoyer ma demande</button>
+    <form action="https://formspree.io/f/xlgabevr" method="POST">
+      <div class="contact-form-group">
+        <label>Votre prénom</label>
+        <input type="text" name="prenom" placeholder="Marie" required>
+      </div>
+      <div class="contact-form-group">
+        <label>Votre email</label>
+        <input type="email" name="email" placeholder="marie@exemple.fr" required>
+      </div>
+      <div class="contact-form-group">
+        <label>Soin souhaité</label>
+        <input type="text" name="soin" placeholder="Massage, sophrologie, réflexologie...">
+      </div>
+      <div class="contact-form-group">
+        <label>Votre message</label>
+        <textarea name="message" placeholder="Parlez-moi de vous et de vos besoins..."></textarea>
+      </div>
+      <button type="submit" class="btn-form">Envoyer ma demande</button>
+    </form>
   </div>
 </section>
 
